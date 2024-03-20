@@ -3,7 +3,7 @@ from nucliadb_sdk import NucliaDB, Region
 from nuclia import sdk
 
 # Initialize SDK
-sdk = NucliaDB(region=Region.ON_PREM, url="http://localhost:8080/api")
+sdk = NucliaDB(region=Region.ON_PREM, url="http://0.0.0.0:8080/api")
 
 
 def list_resources(kb_id):
@@ -11,6 +11,6 @@ def list_resources(kb_id):
     print(resources)
     return resources
 
-kb_id = 'f73ad734de1d4bd3be3011f0b22dab90'  # Replace with the actual knowledge box ID
+kb_id = 'c8648aa8-895a-4c09-920a-2ff19cb245a3'  # Replace with the actual knowledge box ID
 list_resources(kb_id)
 

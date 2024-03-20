@@ -18,7 +18,7 @@ def encode_file(file_path):
         return base64.b64encode(file.read()).decode('utf-8')
 
 # Upload PDF files to the Knowledge Box
-pdf_directory = '/Users/rhyman/Coding/nuclia/pdf_folder_nuclia'
+pdf_directory = '/Users/rhyman/Coding/nuclia-demo/pdf_folder_nuclia'
 pdf_files = [f for f in os.listdir(pdf_directory) if f.endswith('.pdf')]
 for pdf_file in pdf_files:
     pdf_path = os.path.join(pdf_directory, pdf_file)
