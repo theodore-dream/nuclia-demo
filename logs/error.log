@@ -1,0 +1,191 @@
+[2024-03-19 00:07:47,867.867][ERROR][nucliadb.ingest] - Unhandled error pulling messages from processing -- 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/ingest/consumer/pull.py", line 142, in _loop
+    data = await processing_http_client.pull(self.partition)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/common/http_clients/processing.py", line 158, in pull
+    check_status(resp, resp_text)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/common/http_clients/utils.py", line 39, in check_status
+    raise exceptions.ClientException(f"Unknown error: {resp.status} - {resp_text}")
+nucliadb.common.http_clients.exceptions.ClientException: Unknown error: 400 - {"detail":"JWT decoding error"}
+[2024-03-19 00:08:18,638.638][ERROR][nucliadb.ingest] - Unexpected error creating KB -- slug=nuclia_info
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/ingest/service/writer.py", line 165, in NewKnowledgeBox
+    kbid = await self.create_kb(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/ingest/service/writer.py", line 182, in create_kb
+    return await self._create_kb_onprem(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/ingest/service/writer.py", line 195, in _create_kb_onprem
+    lconfig = await learning_proxy.get_configuration(kbid)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/learning_proxy.py", line 69, in get_configuration
+    resp.raise_for_status()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/httpx/_models.py", line 761, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://europe-1.nuclia.cloud/api/v1/config/ae469dca-cf5c-4dde-be65-66e66c9e954e'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+[2024-03-19 00:08:55,245.245][ERROR][nucliadb.ingest] - Unexpected error creating KB -- slug=nuclia_info
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/ingest/service/writer.py", line 165, in NewKnowledgeBox
+    kbid = await self.create_kb(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/ingest/service/writer.py", line 182, in create_kb
+    return await self._create_kb_onprem(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/ingest/service/writer.py", line 195, in _create_kb_onprem
+    lconfig = await learning_proxy.get_configuration(kbid)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/learning_proxy.py", line 69, in get_configuration
+    resp.raise_for_status()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/httpx/_models.py", line 761, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://europe-1.nuclia.cloud/api/v1/config/4a17be57-5764-4e19-bae2-24f461518f11'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+[2024-03-19 00:09:07,067.67][ERROR][asyncio] - Exception in callback _handle_task_result(<Task cancell.../pull.py:117>>) at /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/ingest/consumer/service.py:45
+handle: <Handle _handle_task_result(<Task cancell.../pull.py:117>>) at /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/ingest/consumer/service.py:45> -- 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/ingest/consumer/pull.py", line 142, in _loop
+    data = await processing_http_client.pull(self.partition)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/common/http_clients/processing.py", line 158, in pull
+    check_status(resp, resp_text)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/common/http_clients/utils.py", line 39, in check_status
+    raise exceptions.ClientException(f"Unknown error: {resp.status} - {resp_text}")
+nucliadb.common.http_clients.exceptions.ClientException: Unknown error: 400 - {"detail":"JWT decoding error"}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/ingest/consumer/service.py", line 46, in _handle_task_result
+    e = task.exception()
+        ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/ingest/consumer/pull.py", line 123, in loop
+    await self._loop()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/ingest/consumer/pull.py", line 193, in _loop
+    await asyncio.sleep(self.pull_time_error_backoff)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/tasks.py", line 639, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+[2024-03-19 00:10:14,343.343][ERROR][nucliadb.ingest] - Unhandled error pulling messages from processing -- 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/ingest/consumer/pull.py", line 142, in _loop
+    data = await processing_http_client.pull(self.partition)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/common/http_clients/processing.py", line 158, in pull
+    check_status(resp, resp_text)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/common/http_clients/utils.py", line 39, in check_status
+    raise exceptions.ClientException(f"Unknown error: {resp.status} - {resp_text}")
+nucliadb.common.http_clients.exceptions.ClientException: Unknown error: 400 - {"detail":"JWT decoding error"}
+[2024-03-19 00:11:54,538.538][ERROR][nucliadb.ingest] - Unhandled error pulling messages from processing -- 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/ingest/consumer/pull.py", line 142, in _loop
+    data = await processing_http_client.pull(self.partition)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/common/http_clients/processing.py", line 158, in pull
+    check_status(resp, resp_text)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/common/http_clients/utils.py", line 39, in check_status
+    raise exceptions.ClientException(f"Unknown error: {resp.status} - {resp_text}")
+nucliadb.common.http_clients.exceptions.ClientException: Unknown error: 400 - {"detail":"JWT decoding error"}
+[2024-03-19 00:13:30,611.611][ERROR][nucliadb.ingest] - Unexpected error creating KB -- slug=nuclia_info
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/ingest/service/writer.py", line 165, in NewKnowledgeBox
+    kbid = await self.create_kb(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/ingest/service/writer.py", line 182, in create_kb
+    return await self._create_kb_onprem(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/ingest/service/writer.py", line 195, in _create_kb_onprem
+    lconfig = await learning_proxy.get_configuration(kbid)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/learning_proxy.py", line 69, in get_configuration
+    resp.raise_for_status()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/httpx/_models.py", line 761, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://europe-1.nuclia.cloud/api/v1/config/4b41edc0-c7d9-4258-bde7-95b94484ee68'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+[2024-03-19 00:13:34,742.742][ERROR][nucliadb.ingest] - Unhandled error pulling messages from processing -- 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/ingest/consumer/pull.py", line 142, in _loop
+    data = await processing_http_client.pull(self.partition)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/common/http_clients/processing.py", line 158, in pull
+    check_status(resp, resp_text)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/common/http_clients/utils.py", line 39, in check_status
+    raise exceptions.ClientException(f"Unknown error: {resp.status} - {resp_text}")
+nucliadb.common.http_clients.exceptions.ClientException: Unknown error: 400 - {"detail":"JWT decoding error"}
+[2024-03-19 00:13:45,519.519][ERROR][nucliadb.ingest] - Unexpected error creating KB -- slug=nuclia_info
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/ingest/service/writer.py", line 165, in NewKnowledgeBox
+    kbid = await self.create_kb(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/ingest/service/writer.py", line 182, in create_kb
+    return await self._create_kb_onprem(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/ingest/service/writer.py", line 195, in _create_kb_onprem
+    lconfig = await learning_proxy.get_configuration(kbid)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/learning_proxy.py", line 69, in get_configuration
+    resp.raise_for_status()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/httpx/_models.py", line 761, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://europe-1.nuclia.cloud/api/v1/config/3ea5a586-03e1-4feb-8cf3-fcdbd63533b7'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+[2024-03-19 00:14:16,776.776][ERROR][nucliadb.ingest] - Unexpected error creating KB -- slug=nuclia_info
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/ingest/service/writer.py", line 165, in NewKnowledgeBox
+    kbid = await self.create_kb(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/ingest/service/writer.py", line 182, in create_kb
+    return await self._create_kb_onprem(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/ingest/service/writer.py", line 195, in _create_kb_onprem
+    lconfig = await learning_proxy.get_configuration(kbid)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/learning_proxy.py", line 69, in get_configuration
+    resp.raise_for_status()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/httpx/_models.py", line 761, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://europe-1.nuclia.cloud/api/v1/config/d510e5d8-e8dc-4272-8df6-7a465ae4b365'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+[2024-03-19 00:15:14,982.982][ERROR][nucliadb.ingest] - Unhandled error pulling messages from processing -- 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/ingest/consumer/pull.py", line 142, in _loop
+    data = await processing_http_client.pull(self.partition)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/common/http_clients/processing.py", line 158, in pull
+    check_status(resp, resp_text)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/common/http_clients/utils.py", line 39, in check_status
+    raise exceptions.ClientException(f"Unknown error: {resp.status} - {resp_text}")
+nucliadb.common.http_clients.exceptions.ClientException: Unknown error: 400 - {"detail":"JWT decoding error"}
+[2024-03-19 00:16:19,148.148][ERROR][asyncio] - Exception in callback _handle_task_result(<Task cancell.../pull.py:117>>) at /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/ingest/consumer/service.py:45
+handle: <Handle _handle_task_result(<Task cancell.../pull.py:117>>) at /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/ingest/consumer/service.py:45> -- 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/ingest/consumer/pull.py", line 142, in _loop
+    data = await processing_http_client.pull(self.partition)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/common/http_clients/processing.py", line 158, in pull
+    check_status(resp, resp_text)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/common/http_clients/utils.py", line 39, in check_status
+    raise exceptions.ClientException(f"Unknown error: {resp.status} - {resp_text}")
+nucliadb.common.http_clients.exceptions.ClientException: Unknown error: 400 - {"detail":"JWT decoding error"}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/ingest/consumer/service.py", line 46, in _handle_task_result
+    e = task.exception()
+        ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/ingest/consumer/pull.py", line 123, in loop
+    await self._loop()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/nucliadb/ingest/consumer/pull.py", line 193, in _loop
+    await asyncio.sleep(self.pull_time_error_backoff)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/tasks.py", line 639, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError

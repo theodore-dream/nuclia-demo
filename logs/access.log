@@ -1,0 +1,18 @@
+2024-03-19,00:08:03.114 - 127.0.0.1:55995 - [1mGET /admin/ HTTP/1.1[0m [32m200 OK[0m
+2024-03-19,00:08:03.130 - 127.0.0.1:55995 - [1mGET /admin/runtime.990fdd58a3224dba.js HTTP/1.1[0m [32m200 OK[0m
+2024-03-19,00:08:03.132 - 127.0.0.1:55996 - [1mGET /admin/main.2b16fa1da30a119a.js HTTP/1.1[0m [32m200 OK[0m
+2024-03-19,00:08:03.133 - 127.0.0.1:55997 - [1mGET /admin/styles.36fd640d63cf1d97.css HTTP/1.1[0m [32m200 OK[0m
+2024-03-19,00:08:03.233 - 127.0.0.1:55996 - [1mGET /admin/assets/deployment/app-config.json?t=1710821283227 HTTP/1.1[0m [32m200 OK[0m
+2024-03-19,00:08:03.256 - 127.0.0.1:55995 - [1mGET /admin/assets/i18n/sync/en.json?version=8fd437a3ced6aa47092c97876b0ded8db9d2daf4 HTTP/1.1[0m [32m200 OK[0m
+2024-03-19,00:08:03.259 - 127.0.0.1:55997 - [1mGET /admin/assets/i18n/common/en.json?version=8fd437a3ced6aa47092c97876b0ded8db9d2daf4 HTTP/1.1[0m [32m200 OK[0m
+2024-03-19,00:08:03.265 - 127.0.0.1:55996 - [1mGET /admin/assets/i18n/user/en.json?version=8fd437a3ced6aa47092c97876b0ded8db9d2daf4 HTTP/1.1[0m [32m200 OK[0m
+2024-03-19,00:08:03.276 - 127.0.0.1:56000 - [1mGET /api/v1/kb/4a167530-0962-4a14-a7b7-a22518bf2f27 HTTP/1.1[0m [31m404 Not Found[0m
+2024-03-19,00:08:03.277 - 127.0.0.1:55999 - [1mGET /api/v1/kbs HTTP/1.1[0m [32m200 OK[0m
+2024-03-19,00:08:18.643 - 127.0.0.1:56006 - [1mPOST /api/v1/kbs HTTP/1.1[0m [91m500 Internal Server Error[0m
+2024-03-19,00:08:55.250 - 127.0.0.1:56013 - [1mPOST /api/v1/kbs HTTP/1.1[0m [91m500 Internal Server Error[0m
+2024-03-19,00:13:12.478 - 127.0.0.1:56083 - [1mGET /api/v1/kb/fbbcca549e8d4acfbceaea573aae907a/slug/Nuclia_Information_1 HTTP/1.1[0m [31m404 Not Found[0m
+2024-03-19,00:13:30.620 - 127.0.0.1:56090 - [1mPOST /api/v1/kbs HTTP/1.1[0m [91m500 Internal Server Error[0m
+2024-03-19,00:13:39.402 - 127.0.0.1:56095 - [1mGET /api/v1/kb/4a167530-0962-4a14-a7b7-a22518bf2f27/resources HTTP/1.1[0m [32m200 OK[0m
+2024-03-19,00:13:45.525 - 127.0.0.1:56098 - [1mPOST /api/v1/kbs HTTP/1.1[0m [91m500 Internal Server Error[0m
+2024-03-19,00:13:49.174 - 127.0.0.1:56102 - [1mGET /api/v1/kb/4a167530-0962-4a14-a7b7-a22518bf2f27/resources HTTP/1.1[0m [32m200 OK[0m
+2024-03-19,00:14:16.781 - 127.0.0.1:56107 - [1mPOST /api/v1/kbs HTTP/1.1[0m [91m500 Internal Server Error[0m
