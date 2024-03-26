@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search information using Nuclia search</title>
+    <script src="frontend.js"></script>
+</head>
+<body>
+    <input type="text" id="searchQuery" placeholder="Search..." />
+    <select id="generativeModel">
+        <option value="paragraph">paragraph</option>
+        <option value="document">document</option>
+        <option value="relations">relations</option>
+        <option value="vector">vector</option>
+
+        <!-- Add other models as needed -->
+    </select>
+    <button onclick="performSearch()">Search</button>
+
+    <div id="searchResults"></div>
+
+    <nuclia-search-bar 
+      knowledgebox="6fd0e260-56f2-4269-ae4a-f944bc8df706"
+      zone="aws-us-east-2-1"
+      features="filter,suggestions,permalink,displayMetadata" 
+      filters="labels,entities"
+      state="PRIVATE"
+      account="bcf35adb-6cba-4303-acda-7c3aa6a29866"
+      kbslug="basic"
+      apikey="eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6InNhIn0.eyJpc3MiOiJodHRwczovL2F3cy11cy1lYXN0LTItMS5udWNsaWEuY2xvdWQvIiwiaWF0IjoxNzExNDE4MzI1LCJzdWIiOiJmNGExODNkMC1mYWIzLTQwNjYtYmZhZS03YmE1OTRjMzhkMDgiLCJqdGkiOiIwZTc4Y2M0My1kNWY2LTRmYTQtODBlMS04NWMzODA3YTIyMWMiLCJleHAiOjE3NDI5NTQzMjQsImtleSI6Ijc4NDc5MGIyLTI5NmYtNDAzOS1hMzJlLTM4MjI3NjdiOTg3MCIsImtpZCI6ImM2ZTZkYjZjLTZkMzQtNGExYS1iNzA5LTJhMWZlMjQ5YWRkYyJ9.Bd3GJfdVKpheiXWfIBpZO9R3SlRwuOtegz8nPK5CEjEEodA3MZMejb-GRsk2gk8aNPUXTu5yAIXMx_x8fM4CW0h_TXqPTyLUqbLvytBJHH61ynY0WWEj32J2t8vuCxks5qnZLS-2noVum2GRREt-IDzJ78a3SHsm-v019OpH7sIbR0tZT2PAyZrz50tscEUpeF9buhDncK5rwPQoyFFLjzwFbosZOdZmtKn8pix4odRJLlCDKd-J7O5rfHkrLx7k4NktBwyRtNm1qWAGAD1l_xYUMKQMnflS_I3pw2mT7CHPQF5AB05oyTA4BkgLGph3zyfF7W8C5Vtnn4_PvhX-dTpQZUccHt1WJ6db7V9V0p-GBDftqAA3cHKY37dHQBZJMUauVKmd5KFOvNc6bS-4TjZ9XqTufZgB-A39dmJtjxRegLPX3HmtkDsYIcKy5VVS2fg6YmTmSJBHzKYPb5jK8su2iGaQHWVzb763qEkAa8zQpGx1ylmzbuQBT2SQovr1sY7Z4OBSU2iWiCf6UAH6VmrIfvG4k1jTYcxQ6R5mSCZC8foxb_RNM5Wd0C8JtQJC3UkIpbmfGmWtK0TGCSJTx0WgjnJJmuK2t1xFjDgQwSv893vfxRDEvmzONmmzcMNvMg39iu8iQ5i-naC42qi3g_e-n0OUFtXuFJ_INSTm_74"      "></nuclia-search-bar>
+    <nuclia-search-results></nuclia-search-results>
+
+    <script src="frontend.js"></script>
+</body>
+</html>
