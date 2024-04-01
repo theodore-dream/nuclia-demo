@@ -1,0 +1,126 @@
+Cj0KCQjwk6SwBhDPARIsAJ59GwdI2IXdApXOqjzsxFzghAvcQvJQGCeyDYGSJDUPawhraEQO5IF2wf8aAj1PEALw_wcB
+
+Nuclia, the all-in-one
+RAG as a service platform.
+
+Nuclia automatically indexes unstructured data from internal and external sources while providing 100% data governance.
+
+Start free trial
+Deliver answers, not only search results from your data.
+Nuclia automatically delivers AI search and Generative Answers on top of your unstructured data, and provides knowledge in the form of trusted answers, in any language, and from any data. 
+
+
+
+Seamless integration
+Nuclia eliminates the need for businesses to assemble and maintain a complex RAG stack. Its RAG-as-a-service API seamlessly integrates into existing enterprise setups, offering comprehensive Software Development Kits (SDKs) and ensuring interoperability within the technological ecosystem.
+Security and compliance assurance
+
+Nuclia is SOC2 Type 2 and ISO 27001 compliant, ensuring the highest standards of security, data integrity, and privacy. This compliance guarantees that Nuclia’s RAG-as-a-service adheres to rigorous information security protocols, providing companies with a trustworthy and secure solution for their unstructured data needs.
+
+
+
+Integration with popular business Apps
+
+Nuclia seamlessly integrates with leading business applications such as SharePoint, Confluence, OneDrive, Google Drive, Amazon S3, and more. This ensures compatibility with the most popular platforms, enhancing the accessibility and utility of Nuclia across various business environments.
+Data flexibility and language support 
+
+Nuclia allows indexing of data in any format and language, providing a versatile solution that caters to diverse data types and linguistic preferences.
+Data Management
+
+Nuclia automates data access, lifecycle management, and indexing, streamlining the entire information lifecycle from acquisition to deletion. This ensures swift and accurate collection of extensive, varied data, aligned with data integrity, security, business needs, and compliance standards.
+
+Security and Privacy
+
+Nuclia prioritizes data security and access control. It provides robust mechanisms for implementing Access Control Lists (ACL), adapting to evolving organizational structures and roles while ensuring the highest standards of security and compliance.
+User Experience
+
+Nuclia enhances user search experience through natural language queries, allowing users to obtain accurate and relevant responses. The system incorporates adaptable chat interfaces, real-time prompt engineering, and a chain of reasoning, facilitating meaningful dialogue.
+
+AI Search Capabilities
+
+Nuclia’s AI search engine efficiently handles complex tasks like data indexing and search within a large context. Continuous updates and refinement are inherent in Nuclia’s design, maintaining a large-scale index over time for accuracy and relevance.
+Operation and Updates
+
+Nuclia guarantees continuous operation by proactively addressing updates, upgrades, and enhancements. The platform undergoes ongoing refinement to sustain optimal performance and adapt to evolving needs, sparing companies the burden of constant maintenance.
+
+
+https://siliconangle.com/2022/04/20/draft-spanish-startup-nuclia-gets-5-4m-advance-unstructured-data-search/
+
+Spanish startup Nuclia gets $5.4M to advance unstructured data search
+
+BY MIKE WHEATLEY
+
+Artificial intelligence-powered search startup Nuclia said today it has raised $5.4 million in a seed funding round led by Crane Venture Partners and Ealai.https://siliconangle.com/2022/04/20/draft-spanish-startup-nuclia-gets-5-4m-advance-unstructured-data-search/
+
+The round will enable the company to build upon the launch of its open-source and cloud-native database NucliaDB. Officially called Bosutech S.L., Nuclia also announced the public availability of its application programming interface, which allows developers to integrate extremely potent, AI-powered search into any application, service or website.
+
+What Nuclia has built is an AI-powered solution for searching unstructured data, and it looks to be a big deal. These days, every company has built up vast troves of data, but the vast majority of that information — around 80% to 90%, Nuclia says — is unstructured, in the form of unreadable text documents such as PDFs, or video or audio files. Until now, searching through this kind of data accurately has always been a big challenge.
+
+The problem is that most companies simply don’t have the capability to ingest, process and index all of this unstructured data. As Nuclia points out, meeting even a small part of this challenge has taken hundreds of engineers and millions of machines’ worth of computation.
+
+With the launch of Nuclia’s API and NucliaDB, the startup claims that this kind of power is now available to anyone. NucliaDB, which can be found on GitHub, is the foundation of Nuclia’s capabilities. The company claims it’s the first vector database that’s specifically designed for unstructured data.
+
+Vector databases are purpose-built to handle the unique structure of vector embeddings. They index unstructured data as vectors that can easily be searched and retrieved by comparing values and finding those that are most similar to one another.
+
+Companies can tap NucliaDB through the Nuclia API, which can quickly connect to any data source and automatically index its content regardless of what format or even language it is in. Eudald Camprubí, founder and chief executive of Nuclia, told SiliconANGLE that the Nuclia API enables users to perform multilingual semantic searches on their entire unstructured data set, transforming that information into knowledge.
+
+“Nuclia’s API enables developers to integrate AI-powered search by normalizing unstructured data,” Camprubí explained, adding that this includes transcribing video and audio, extracting all content from images, documents and other text-based information. “It vectorizes all of this data and creates an index that can be searched.”
+
+Once all of this unstructured data has been indexed, developers can use Nuclia API to discover semantic results, specific paragraphs in text and relationships between data. These capabilities can be integrated in any application with ease, Camprubí said.
+
+Crane Venture Partner Aneel Lakhani was full of praise for the company, saying Nuclia has built “something incredible” that will enable users to be taken to the exact moment they’re searching for in a video or podcast, or the exact block of text they’re looking for in a PDF or PowerPoint presentation.
+
+Constellation Research Inc. analyst Andy Thurai was more practical in his assessment. He told SiliconANGLE Nuclia is solving a problem many companies have, which is that they possess far more unstructured data than they really know what to do with. Because that information is not easily readable, they just tend to just store it indefinitely, in the hope that one day they’ll be able to figure out what to do with it, he said. Although Nuclia is in many ways just another entrant into a very crowded field of startups all trying to solve this problem, Thurai said, it has a few capabilities that may be useful to enterprises.
+
+“Firs,t their search can be completely API-based. Once the proper data sources are connected, any app can use Nuclia’s publicly available API to perform search on unstructured data,” Thurai said. “Second, they can do they can do multilingual search using a text search box, so in that way it’s aiming to be the Google of unstructured data search.”
+
+Thurai said Nuclia’s claim to be able to detect images within unstructured datasets is also unique. For example, it says it can find an embedded image within a scanned document. Further, the company also claims the capability to perform a “fuzzy search” on unstructured data. Thurai explained that this means it can search for sentences that closely match what the user is searching for, as opposed to finding an exact match.
+
+“This last capability is unique in the area of unstructured data search,” Thurai said. “It can potentially lead to new image classification and video classification techniques, so we could say one video is X% similar to another one, and so on. It could also be very useful in defending copyright to music, imagery, music videos and more.”
+
+
+Spanish startup Nuclia reveals language search models
+By Chris Mellor -December 9, 2022
+
+Head torch MIlky Way at night searcher
+AI Search-as-a-Service company Nuclia claims it can index text from virtually any source and language and then search it for words or phrases in multiple languages.
+
+It’s a cliche that 80 percent of companies’ data is unstructured and keeps on growing. Looking for text and speech needles in this data haystack is complicated by there being myriad file formats and also multiple languages used in subsidiary operations for international business. Most international companies simply cannot catalog all the unstructured data they hold – they don’t know what they have and have no practical way of finding out.  Nuclia reckons it can fix that.
+
+The two founders, CEO Eudald Camprubí and CTO Ramon Navarro, told an IT Press Tour that their software can help companies sift through complex data, because its language model technique normalizes multi-language unstructured data and makes it searchable.
+
+
+Nuclia founders
+The key technology is natural language processing (NLP) and it uses language modelling to build vectors of language statements and store them in its open-source NucliaDB database. This is available in GitHub, is cloud-native and stores unstructured data and vector, text, paragraphs and relations indexing information. A vector in this sense is a set of numeric values in arbitrary dimensions – tens, hundreds or even more of them – that describe a complex data object such as a word, phrase, paragraph, object or image.
+
+
+The sources from which the vectors are generated are files and objects: S3 is supported,  containing text that is printed, viewed or spoken. This could be a Word document, PowerPoint slide, images which can be scanned with OCI, and audio files which can be transcribed. The text can be indexed from virtually any language which is not pictogram-based; pictograms being characters such as those found in Japanese and Chinese languages.
+
+
+Nuclia architecture slide
+The index is paragraph-sensitive and search results come in multi-paragraph form, not the unparagraphed masses of text which the Otter.ai transcription service can produce.
+
+Nuclia search is faster and broader than searching through a file:folder document structure using keywords, the company claims, as Nuclia looks into content irrespective of its format and language. A keyword search is language sensitive; a search for “Vehicle” will not return results containing the French word “voiture”, the German word “Fahrzeug“ or the Italian word “veoicolo.” A search of a Nuclia-indexed sets of PDFs, word docs, audio files and images containing text in multiple languages, will return these results.
+
+That’s because the Nuclia search does not look for keywords but for the language models which  underlie different languages and hence are common to them. When you input a search string to Nuclia it turns that into a language model and then searches for similar models in the NucliaDB repository. Searches can use sentences or paragraphs, or keywords of course.
+
+From its point of view, files and folders are poor ways of putting a structure in place to contain and access data. It’s better to have a searchable central database indexing everything that uses text or speech. Search results point to specific text paragraphs or specific timed parts of podcasts, other audio files, or videos containing speech.
+
+Nuclia’s software runs on the Google Cloud Platform. Applications can use it as an AI-powered search plug-in through API integration.  
+
+https://blocksandfiles.com/2022/12/09/search-my-language-models-says-spanish-startup-nuclia/
+
+Nuclia YouTube video showing how to include its AI-powered search engine in applications in minutes
+The company was founded in Barcelona, Spain in 2019, and picked up €5.4 million in seed funding in April from two European funds: Crane Venture Partners in the UK and Elaia in France. There are some 20 staff, mostly developers. The company earned about $100,000 in revenue this year and has commitments for next year that total $400,000 to $500,000.
+
+Pricing is still being worked out and is influenced by the amount of source data to be indexed and the number of queries per period.
+
+Nuclia has 20 or so customers in the healthcare, pharmaceutical, education, public administration and customer service areas. One of its customers inputs about 100,000 PDDF documents a month for indexing. This is computationally intensive; indexing a thousand of them takes about a week.
+
+Individual users could connect their desktop drives and Dropbox folders to Nuclia and have it index them. Use cases start with basic unstructured data search and include multi-language semantic search, video and audio search, data anonymisation, GDPR compliance, data training, insight detection and customer service.
+
+It says competing unstructured data search services include ElasticSearch and Algolia, which has a media content search and discovery feature used by customers as a recommendation engine.
+
+Text summarization is an issue, said Camprubí: “It is not that useful today. It is difficult to define what a summary is. Do you generate text or cut-and-paste from the file?”
+
+Nuclia’s roadmap includes a possible addition of translation services.
