@@ -43,7 +43,7 @@ async function searchInNuclia(query, generativeModel) {
     const apiUrl = `https://aws-us-east-2-1.nuclia.cloud/api/v1/kb/6fd0e260-56f2-4269-ae4a-f944bc8df706/search`;
     const params = new URLSearchParams({
         query: query,
-        min_score_bm25: 5.0,
+        min_score_bm25: 3.0,
         generative_model: generativeModel, // Pass generativeModel to the API call
         features: 'paragraph',
         page_number: 0,
