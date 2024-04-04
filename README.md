@@ -1,5 +1,9 @@
 # Nuclia demo
 
+### Nuclia reference architecture
+
+<img width="740" alt="Screenshot 2024-04-04 at 12 42 50 AM" src="https://github.com/theodore-dream/nuclia-demo/assets/20304946/38be491a-7ec8-4fd6-8ad9-3ecc5611d72b">
+
 ### Overview
 
 This is a demo of Nuclia capabilities. 
